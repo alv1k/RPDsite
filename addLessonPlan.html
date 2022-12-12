@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="body pb-5">
+
+    <div class="d-flex p-3 bg-dark">
+            <div class="p-2">
+                <a class="text-decoration-none" href="listOfModules.php">Список модулей</a>
+            </div>
+            <div class="p-2 text-light">
+                <a class="text-decoration-none" href="#">Добавить план урока</a>
+            </div>
+    </div>
+    <div class="imgBox">
+        <h1 class="text-center " style="">Добавить план урока</h1>
+    </div>
+    
+    <form action="reductor.php" method="POST">
+        
+    <div class="row parent">
+        <div class="form-floating row">
+            <p class="col-2">Тема</p>
+            <textarea class="col form-control" name="theme"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            
+        </div>
+    </div>
+    <div class="row parent">        
+        <div class="form-floating row">
+            <p class="col-2">Цель урока</p>
+            <textarea class=" col form-control" name="goal" autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        </div>
+    </div>
+    <div class="row parent">        
+        <div class="form-floating row">
+            <p class="col-2">Результат урока</p>
+            <textarea class=" col form-control" name="result" autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        </div>
+    </div>
+
+    <div class="row parent">        
+        <div class="form-floating row">
+            <p class="col-2">Модуль:</p>
+            <textarea class="col form-control" name="moduleID" autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        </div>
+    </div>
+    <div class="container mt-3 bg-secondary bg-gradient bg-opacity-25">
+        <div class="form-floating">
+            <textarea class="form-control" name="input_question1"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Вопрос</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="textarea_answer1"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Ответ</label>
+        </div>
+
+    </div>
+
+    <div class="col-6 mx-auto">
+        <img src="https://blog.skillfactory.ru/wp-content/uploads/2022/08/2-8945463.png" class="lessonImage">
+    </div>
+    <div class="container mt-3 bg-secondary bg-gradient bg-opacity-25">
+
+        <div class="form-floating">
+            <textarea class="form-control" name="input_question2"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Вопрос</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="textarea_answer2"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Ответ</label>
+        </div>
+
+    </div>
+    <div class="container mt-3 bg-secondary bg-gradient bg-opacity-25">
+
+        <div class="form-floating">
+            <textarea class="form-control" name="input_question3"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Вопрос</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="textarea_answer3"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Ответ</label>
+        </div>
+
+    </div>
+    <div class="container mt-3 bg-secondary bg-gradient bg-opacity-25">
+
+        <div class="form-floating">
+            <textarea class="form-control" name="input_question4"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Вопрос</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="textarea_answer4"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Ответ</label>
+        </div>
+
+    </div>
+    <div class="container mt-3 bg-secondary bg-gradient bg-opacity-25">
+
+        <div class="form-floating">
+            <textarea class="form-control" name="input_question5"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Вопрос</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="textarea_answer5"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Ответ</label>
+        </div>
+
+    </div>
+    <div class="container mt-3 bg-secondary bg-gradient bg-opacity-25">
+
+        <div class="form-floating">
+            <textarea class="form-control" name="input_question6"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Вопрос</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="textarea_answer6"autocomplete="off"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Ответ</label>
+        </div>
+
+    </div>
+
+    
+    <button class="done parent btn btn-success" type="submit">
+        Готово
+    </button> 
+
+    </form>
+    <button class="add parent btn btn-warning">
+        Добавить Вопрос-Ответ
+    </button> 
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        let add = document.querySelector(".add");
+        let done = document.querySelector(".done");
+        let helper = document.querySelector(".helper");
+        add.onclick = function(){
+            let qDiv = document.createElement("div");
+            qDiv.classList.add("row", "parent");
+            document.body.appendChild(qDiv);
+
+            let child1_q = document.createElement("div");
+            child1_q.classList.add("col-6", "question");
+            qDiv.appendChild(child1_q);
+            let child2_q = document.createElement("div");
+            child2_q.classList.add("col-6");
+            qDiv.appendChild(child2_q);
+
+            let p_q = document.createElement("p");
+            p_q.classList.add("text_question");
+            child1_q.appendChild(p_q);
+            p_q.innerHTML = "Вопрос";
+            let input_q = document.createElement("input");
+            input_q.classList.add("input_question");
+            input_q.setAttribute('name', 'input_question');
+            child2_q.appendChild(input_q);
+
+
+
+            let aDiv = document.createElement("div");
+            aDiv.classList.add("row", "parent");
+            document.body.appendChild(aDiv);
+
+            let child1_a = document.createElement("div");
+            child1_a.classList.add("col-6", "answer");
+            aDiv.appendChild(child1_a);
+            let child2_a = document.createElement("div");
+            child2_a.classList.add("col-6");
+            aDiv.appendChild(child2_a);
+
+            let p_a = document.createElement("p");
+            p_a.classList.add("text_answer");
+            child1_a.appendChild(p_a);
+            p_a.innerHTML = "Ответ";
+            let input_a = document.createElement("textarea");
+            input_a.classList.add("textarea_answer");
+            input_a.setAttribute('name', 'textarea_answer');
+            child2_a.appendChild(input_a);
+
+
+
+            helper.before(qDiv);
+            helper.before(aDiv);
+        }
+
+
+
+    </script>
+  </body>
+</html>
